@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{PARK_NAME}} | 5 вёрст</title>
+    <title>Лобня Городской парк | 5 вёрст</title>
     <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
     <style>
         :root { --primary: #2B326D; --accent: #E6564C; --bg: #f5f5f5; }
@@ -104,22 +104,22 @@
         <h2 style="border:none;">Ключевые роли</h2>
         <div class="role-grid">
             <div class="role-item-btn" onclick="showRoleDetail(1, 'Организатор', 'Главный человек на старте. Координирует волонтеров, проводит брифинг и следит за безопасностью.')">
-                <img src="{{GITHUB_IMG_BASE}}role_1.jpg" onerror="this.src='https://via.placeholder.com/100?text=Role'"><span>Организатор</span>
+                <img src="https://raw.githubusercontent.com/WeifoxRu/5verst-2622/main/role_1.jpg" onerror="this.src='https://via.placeholder.com/100?text=Role'"><span>Организатор</span>
             </div>
             <div class="role-item-btn" onclick="showRoleDetail(2, 'Секундомер', 'Нажимает кнопку СТАРТ и фиксирует время каждого финишера. Самая ответственная роль!')">
-                <img src="{{GITHUB_IMG_BASE}}role_2.jpg" onerror="this.src='https://via.placeholder.com/100?text=Role'"><span>Секундомер</span>
+                <img src="https://raw.githubusercontent.com/WeifoxRu/5verst-2622/main/role_2.jpg" onerror="this.src='https://via.placeholder.com/100?text=Role'"><span>Секундомер</span>
             </div>
             <div class="role-item-btn" onclick="showRoleDetail(11, 'Сканер', 'Сканирует личный штрих-код участника и карточку позиции после финиша.')">
-                <img src="{{GITHUB_IMG_BASE}}role_11.jpg" onerror="this.src='https://via.placeholder.com/100?text=Role'"><span>Сканер</span>
+                <img src="https://raw.githubusercontent.com/WeifoxRu/5verst-2622/main/role_11.jpg" onerror="this.src='https://via.placeholder.com/100?text=Role'"><span>Сканер</span>
             </div>
             <div class="role-item-btn" onclick="showRoleDetail(13, 'Карточки', 'Выдает карточку с номером позиции каждому, кто пересек финишную черту.')">
-                <img src="{{GITHUB_IMG_BASE}}role_13.jpg" onerror="this.src='https://via.placeholder.com/100?text=Role'"><span>Карточки</span>
+                <img src="https://raw.githubusercontent.com/WeifoxRu/5verst-2622/main/role_13.jpg" onerror="this.src='https://via.placeholder.com/100?text=Role'"><span>Карточки</span>
             </div>
             <div class="role-item-btn" onclick="showRoleDetail(7, 'Маршал', 'Стоит на ключевых поворотах, указывает путь и подбадривает участников.')">
-                <img src="{{GITHUB_IMG_BASE}}role_7.jpg" onerror="this.src='https://via.placeholder.com/100?text=Role'"><span>Маршал</span>
+                <img src="https://raw.githubusercontent.com/WeifoxRu/5verst-2622/main/role_7.jpg" onerror="this.src='https://via.placeholder.com/100?text=Role'"><span>Маршал</span>
             </div>
             <div class="role-item-btn" onclick="showRoleDetail(19, 'Замыкающий', 'Идет последним, чтобы никто не остался на трассе один. Финиширует в самом конце.')">
-                <img src="{{GITHUB_IMG_BASE}}role_19.jpg" onerror="this.src='https://via.placeholder.com/100?text=Role'"><span>Замыкающий</span>
+                <img src="https://raw.githubusercontent.com/WeifoxRu/5verst-2622/main/role_19.jpg" onerror="this.src='https://via.placeholder.com/100?text=Role'"><span>Замыкающий</span>
             </div>
         </div>
     </div>
@@ -147,10 +147,10 @@
 </div>
 <div id="modal_about" class="modal" onclick="closeModal('modal_about')">
     <div class="modal-content" onclick="event.stopPropagation()">
-        <h2 style="border:none;">{{PARK_NAME}}</h2>
+        <h2 style="border:none;">Лобня Городской парк</h2>
         <div style="font-size:14px; line-height:1.5; color:#555;">
-            Бесплатные еженедельные старты в локации {{PARK_NAME}} каждую субботу в 09:00.<br><br>
-            Разработано для сообщества "{{PARK_NAME}}".
+            Бесплатные еженедельные старты в локации Лобня Городской парк каждую субботу в 09:00.<br><br>
+            Разработано для сообщества "Лобня Городской парк".
         </div>
     </div>
     <div class="close-modal">Назад</div>
@@ -181,7 +181,7 @@
     <div class="card">
         <h2>Запись на <span id="event_date" class="date-badge">...</span></h2>
         <div style="background:linear-gradient(90deg, #2B326D, #4f5ca8); color:white; padding:14px 16px; border-radius:12px; margin:12px 0 18px 0; text-align:center; font-weight:700; font-size:16px; box-shadow:0 3px 10px rgba(43,50,109,0.3);">
-            📍 <span id="park_name">{{PARK_NAME}}</span>
+            📍 <span id="park_name">Лобня Городской парк</span>
         </div>
         
         <div id="welcome_back" class="welcome-msg"></div>
@@ -309,8 +309,8 @@
     vkBridge.send("VKWebAppInit");
     
     // ЭТИ МЕТКИ БУДУТ ЗАМЕНЕНЫ ФАБРИКОЙ
-    const SCRIPT_URL = '{{SCRIPT_URL}}';
-    const GITHUB_IMG_BASE = '{{GITHUB_IMG_BASE}}';
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzAaoxcnROrL7ZXfqXgQxLhQpyaJaVAcCjxJp_nLFlmkJx7wNjwD89B1ZOmGQJSOW3ZDw/exec?park=2622';
+    const GITHUB_IMG_BASE = 'https://raw.githubusercontent.com/WeifoxRu/5verst-2622/main/';
 
     let selectedVolunteer = null;
     let vkUser = null;
